@@ -2,7 +2,6 @@ import struct
 from io import BytesIO
 
 from PIL import BmpImagePlugin, CurImagePlugin, Image, ImageFile
-from PIL._binary import i16le as i16
 from PIL._binary import i32le as i32
 from PIL._binary import o8
 from PIL._binary import o16le as o16
