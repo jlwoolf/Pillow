@@ -175,7 +175,6 @@ def _write_multiple_frames(im: Image.Image, fp: BytesIO, filename: str):
 
         fp.seek(fram_end)
 
-    bmp = im.encoderinfo.get("bitmap_format") == "bmp"
     display_rate = im.encoderinfo.get("display_rate", 2)
     n_frames = len(frames)
     n_steps = len(seq) if seq else n_frames
